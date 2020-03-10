@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Righteous', cursive;
+  background-color: #19222b;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .warm {
+  background-image: url(../img/warm-bg.jpg);
+}
+
+.app main {
+  background: url(../../assets/img/cold-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 100vh;
+  min-width: 375px;
+  padding: 25px;
+}
+
+.app main .search-box {
+  width: 100%;
+  margin: 0 0 3rem;
+}
+
+.app main .search-box .search-bar {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #34495e;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 4px dotted rgba(0, 132, 204, 0.7);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  margin-top: -30px;
+  -webkit-box-shadow: 0px 0px 10px 1px #000;
+          box-shadow: 0px 0px 10px 1px #000;
+  text-transform: uppercase;
+  font-family: 'Righteous', cursive;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.app main .search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.app main .location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.app main .location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.app main .weather-box {
+  text-align: center;
+}
+
+.app main .weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(249, 251, 242, 0.5);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  text-shadow: 2px 2px #d2d2d2;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7);
+  font-size: 7rem;
+  font-weight: 900;
+  border: none;
+  outline: none;
+}
+
+.app main .weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+/*# sourceMappingURL=main.css.map */
