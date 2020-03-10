@@ -2,7 +2,7 @@
 
 ## BU HAVA DURUMU UYGULAMASI OPENWEATHER API İLE YAPILMIŞTIR. 
 
-CANLI : https://furkancakici.github.io/weather-app-reactjs/
+CANLI : https://furkancakici.github.io/weather-app/
 
 ### NELER KULLANDIM/ÖĞRENDİM
 
