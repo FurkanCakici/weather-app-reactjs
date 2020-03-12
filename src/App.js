@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Axios from 'axios';
 
 const App = () => {
    const api = {
@@ -10,12 +11,12 @@ const App = () => {
 
    const search = e => {
       if (e.key === 'Enter') {
-         fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-            .then(res => res.json())
-            .then(result => {
-               setWeather(result);
-               setQuery('');
-            });
+         Axios.get(
+            `${api.base}weather?q=${query}&units=metric&APPID=${api.key}`
+         ).then(result => {
+            setWeather(result.data);
+            setQuery('');
+         });
       }
    };
    const dateBuilder = d => {
